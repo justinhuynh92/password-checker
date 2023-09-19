@@ -37,5 +37,7 @@ def main(args):
             print(f'{password} was NOT found. Carry on!')
     return 'done!'
 
-#run function that accepts any number of arguments we pass 
-main(sys.argv[1:])
+#run function that accepts any number of arguments we pass only if its the main file
+if __name__ == '__main__':
+    #exit file when done
+    sys.exit(main(sys.argv[1:]))
